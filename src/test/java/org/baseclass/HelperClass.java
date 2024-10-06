@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class HelperClass {
-	
+	public static Actions a;
 	public static WebDriver driver ;
 	public static void browserLaunch(String browser) {
 		
@@ -42,6 +43,13 @@ public class HelperClass {
 	 public static void btnClick(WebElement clk) {
 		
 		 clk.click();
+		 
+	}
+	 
+	 public static void btnHover(WebElement source , WebElement target) {
+		
+		 a = new Actions(driver);
+		 a.dragAndDrop(source, target);
 		 
 	}
 	

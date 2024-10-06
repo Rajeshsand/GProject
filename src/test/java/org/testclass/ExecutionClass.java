@@ -12,9 +12,7 @@ public class ExecutionClass extends HelperClass {
 		maximixeWindow();
 		launchUrl("https://www.directline.com/");
 		Thread.sleep(3000);
-		btnClick(pc.getNaviBtn());
-		btnClick(pc.getNaviAcc());
-		btnClick(pc.getNaviIhaveAcc());
+		btnHover(pc.getNaviBtn(), pc.getNaviIhaveAcc());
 		
 		
 	}
