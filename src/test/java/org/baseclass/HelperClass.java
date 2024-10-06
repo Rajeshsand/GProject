@@ -52,11 +52,7 @@ public class HelperClass {
 		 a.dragAndDrop(source, target);
 		 
 	}
-	 public static void btnDblClk() {
-		 
-		 a.doubleClick();
-		
-	}
+	
 	 
 	 
 	
